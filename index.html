@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suzen Bao — Computer Engineering @ UofT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="description" content="Suzen Bao — Computer Engineering student at the University of Toronto. Building hardware-software systems: React/Node, Python, C/C++, Verilog, embedded, and UI/UX.">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="#home">Suzen</a></div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="#projects" class="nav-link"><i class="fas fa-code"></i><span>Projects</span></a>
+        <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i><span>Experience</span></a>
+        <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i><span>Skills</span></a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+      <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Yunhan (Suzen) Bao</span></h1>
+        <p class="hero-subtitle">Computer Engineering @ University of Toronto • AI & Business minors</p>
+        <p class="hero-description">
+          I build at the intersection of <strong>embedded systems</strong>, <strong>full‑stack</strong>, and <strong>human‑centred design</strong> —
+          from Raspberry Pi devices and Verilog projects to React/Node dashboards.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">See Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a third‑year Computer Engineering student at UofT with a strong interest in
+              <b>hardware‑software integration</b> and <b>user‑focused systems</b>.
+              Recently, I led development on <b>CHUMMY</b>, an interactive music‑therapy system for dementia care:
+              Raspberry Pi Zero + Python audio stack on device, a <b>Node/Express + WebSockets</b> backend,
+              and a <b>React</b> caregiver dashboard with live status and BPSD logging.
+            </p>
+            <p>
+              Beyond CHUMMY, I’ve built a <b>two‑octave Verilog synthesizer</b> (PS/2 keyboard, Quartus/ModelSim),
+              a <b>VGA “Whack‑a‑Mole” game</b> on DE1‑SoC, a <b>GIS map app</b> (C++ pathfinding/A* & multi‑threaded courier routing),
+              and contributed to <b>EKF unit tests in C++</b> for a driverless racing team.
+            </p>
+            <p>
+              I love learning by building, shipping, and iterating — and I’m actively looking for co‑op opportunities
+              where I can contribute to real products while leveling up in <b>embedded, systems, and frontend engineering</b>.
+            </p>
+            <div class="about-stats">
+              <div class="stat"><h3>8+</h3><p>Shipped Projects</p></div>
+              <div class="stat"><h3>5</h3><p>Tech Domains</p></div>
+              <div class="stat"><h3>2</h3><p>Minors: AI & Business</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- CHUMMY -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-music"></i></div>
+            <div class="project-content">
+              <h3>CHUMMY — Music‑Therapy System</h3>
+              <p>
+                An interactive music system to reduce BPSD for dementia care. Raspberry Pi device (Python audio stack, GPIO buttons),
+                realtime <b>WebSockets</b> updates through a <b>Node/Express</b> server, and a <b>React</b> dashboard that logs events and
+                shows Now Playing & patient status. Won <b>Best Podium Presentation</b> (UnERD 2025).
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span><span class="tech-tag">Raspberry Pi</span><span class="tech-tag">Flask</span>
+                <span class="tech-tag">Node/Express</span><span class="tech-tag">WebSockets</span><span class="tech-tag">React</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code (upon request)</a>
+              </div>
+            </div>
+          </article>
+          <!-- ECE297 GIS -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-map"></i></div>
+            <div class="project-content">
+              <h3>City Mapify — GIS & Pathfinding</h3>
+              <p>
+                Google‑Maps‑like UI with layers, transit overlays, fuzzy search, and directions. Implemented <b>A*</b>/<b>Dijkstra</b> and
+                an optimized <b>Traveling Courier</b> solution with <b>OpenMP</b> multi‑threading and simulated annealing.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span><span class="tech-tag">Algorithms</span><span class="tech-tag">OpenMP</span>
+                <span class="tech-tag">Data Structures</span><span class="tech-tag">UI</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code (course repo)</a>
+              </div>
+            </div>
+          </article>
+          <!-- Verilog Synth -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-music"></i></div>
+            <div class="project-content">
+              <h3>Two‑Octave Music Synthesizer</h3>
+              <p>
+                Digital synthesizer on FPGA with PS/2 keyboard input and dual‑channel playback. Built in <b>Verilog</b> with
+                <b>Quartus</b>, simulated in <b>ModelSim</b>, encoded musical notes, and designed a simple editor/playback state machine.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Verilog</span><span class="tech-tag">Quartus</span><span class="tech-tag">ModelSim</span>
+              </div>
+            </div>
+          </article>
+          <!-- VGA Game -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-gamepad"></i></div>
+            <div class="project-content">
+              <h3>VGA “Whack‑a‑Mole” on DE1‑SoC</h3>
+              <p>
+                320×240 VGA game with score/time/health HUD, framebuffer animation, and smooth gameplay loop.
+                Focused on clarity and responsiveness of the display pipeline.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C / Assembly</span><span class="tech-tag">ECE243</span><span class="tech-tag">VGA</span>
+              </div>
+            </div>
+          </article>
+          <!-- UTFR EKF -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-car"></i></div>
+            <div class="project-content">
+              <h3>UTFR Driverless — EKF Unit Tests</h3>
+              <p>
+                Wrote C++ unit tests for an Extended Kalman Filter estimating GPS/IMU error in a driverless platform.
+                Strengthened debugging, experimentation, and team collaboration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span><span class="tech-tag">Unit Testing</span><span class="tech-tag">Sensor Fusion</span>
+              </div>
+            </div>
+          </article>
+          <!-- UTAT‑SS Georeference -->
+          <article class="project-card">
+            <div class="project-image"><i class="fas fa-satellite"></i></div>
+            <div class="project-content">
+              <h3>UTAT‑SS FINCH — Georeferencing</h3>
+              <p>
+                Assisted with camera calibration and HSI data pipelines, converting <code>.npy</code> to <code>.h5</code> formats and
+                working with Python/NumPy tools for ground‑truth alignment.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span><span class="tech-tag">NumPy</span><span class="tech-tag">Data Pipelines</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Highlights -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Highlights</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-marker"></span>
+            <div class="timeline-content">
+              <h3>Interactive Media Lab — Research Developer (CHUMMY)</h3>
+              <h4>UofT IML · 2025</h4>
+              <p>Primary dev/integrator for a dementia music‑therapy system (hardware, backend, frontend). Presented at UnERD 2025 — won Best Podium Presentation.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-marker"></span>
+            <div class="timeline-content">
+              <h3>ECE297 — City Mapify</h3>
+              <h4>UofT ECE · 2025</h4>
+              <p>Implemented A*/Dijkstra routing, OpenMP acceleration, and simulated annealing for the traveling courier problem.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-marker"></span>
+            <div class="timeline-content">
+              <h3>UTFR Driverless — Mapping Team</h3>
+              <h4>Student Team · 2024</h4>
+              <p>Contributed EKF unit tests in C++ for GPS/IMU error estimation; improved debugging and collaboration skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-content">
+          <div class="skills-category">
+            <h3>Languages</h3>
+            <div class="skills-text"><p>C, C++, Python, Java, Verilog, JavaScript/TypeScript, HTML/CSS, Bash</p></div>
+          </div>
+          <div class="skills-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skills-grid">
+              <div class="skill-tag">React / Next.js</div>
+              <div class="skill-tag">Node / Express</div>
+              <div class="skill-tag">Flask</div>
+              <div class="skill-tag">WebSockets</div>
+              <div class="skill-tag">OpenMP</div>
+              <div class="skill-tag">Pandas/NumPy</div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Embedded & Hardware</h3>
+            <div class="skills-grid">
+              <div class="skill-tag">Raspberry Pi</div>
+              <div class="skill-tag">GPIO / I2C / SPI</div>
+              <div class="skill-tag">FPGA / Quartus</div>
+              <div class="skill-tag">ModelSim</div>
+              <div class="skill-tag">VGA</div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Tools & Practices</h3>
+            <div class="skills-grid">
+              <div class="skill-tag">Git</div>
+              <div class="skill-tag">Docker</div>
+              <div class="skill-tag">Unit Testing</div>
+              <div class="skill-tag">Agile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              Open to co‑ops, research, and side projects. If my work resonates with you, drop a note — happy to chat!
+            </p>
+            <div class="contact-links">
+              <a href="mailto:suzen.bao@mail.utoronto.ca" class="contact-link"><i class="fas fa-envelope"></i> suzen.bao@mail.utoronto.ca</a>
+              <a href="https://www.linkedin.com/in/suzen-bao" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/Suuu92" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+              <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+              <div class="form-group"><input type="text" placeholder="Subject" required></div>
+              <div class="form-group"><textarea placeholder="Your Message" rows="5" required></textarea></div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container"><p>&copy; 2025 Suzen. All rights reserved.</p></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

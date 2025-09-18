@@ -1,2 +1,2 @@
-# Suzen's Website
+# ThisIsSuzen
 Suzen's personal website
